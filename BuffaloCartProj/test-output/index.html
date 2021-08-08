@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\resmi\eclipse-workspace\BuffaloCartProj\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">30 methods,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="clickTaskPage">clickTaskPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="clickbugs">clickbugs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="clicknewTask">clicknewTask</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="enterBugStatus">enterBugStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="enterDataComboBox">enterDataComboBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="enterDescription">enterDescription</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="enterEstimatedHrs">enterEstimatedHrs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="enterHrRate">enterHrRate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="enterIssue">enterIssue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="enterRelatedDropdown">enterRelatedDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="enterRelatedto">enterRelatedto</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="enterTaskDueDate">enterTaskDueDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="enterTaskName">enterTaskName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="entertaskDate">entertaskDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.LoginPageTest" class="method navigator-link" hash-for-method="inputInvalidUserName">inputInvalidUserName</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.LoginPageTest" class="method navigator-link" hash-for-method="inputValidCredentilas">inputValidCredentilas</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="input_project_name_client">input_project_name_client</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.LoginPageTest" class="method navigator-link" hash-for-method="launchLoginPage">launchLoginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="loginPage">loginPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="navigateToProjectPage">navigateToProjectPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="performSave">performSave</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.TaskVerify" class="method navigator-link" hash-for-method="saveTaskDetails">saveTaskDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="savingbugsDetails">savingbugsDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.BugsVerify" class="method navigator-link" hash-for-method="selectPrioritydata">selectPrioritydata</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="setProgressBar">setProgressBar</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="setProjectStatus">setProjectStatus</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="setStartAndEndDate">setStartAndEndDate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="triggerNewProject">triggerNewProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.ProjectPageTest" class="method navigator-link" hash-for-method="verifyProjectPrice">verifyProjectPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="buffalocart.LoginPageTest" class="method navigator-link" hash-for-method="verifyloginPageTitle">verifyloginPageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">buffalocart.ProjectPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="input_project_name_client">
+                  </a> <!-- input_project_name_client -->
+                  <span class="method-name">input_project_name_client</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="navigateToProjectPage">
+                  </a> <!-- navigateToProjectPage -->
+                  <span class="method-name">navigateToProjectPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="performSave">
+                  </a> <!-- performSave -->
+                  <span class="method-name">performSave</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setProgressBar">
+                  </a> <!-- setProgressBar -->
+                  <span class="method-name">setProgressBar</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setProjectStatus">
+                  </a> <!-- setProjectStatus -->
+                  <span class="method-name">setProjectStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="setStartAndEndDate">
+                  </a> <!-- setStartAndEndDate -->
+                  <span class="method-name">setStartAndEndDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="triggerNewProject">
+                  </a> <!-- triggerNewProject -->
+                  <span class="method-name">triggerNewProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyProjectPrice">
+                  </a> <!-- verifyProjectPrice -->
+                  <span class="method-name">verifyProjectPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">buffalocart.BugsVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickbugs">
+                  </a> <!-- clickbugs -->
+                  <span class="method-name">clickbugs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterBugStatus">
+                  </a> <!-- enterBugStatus -->
+                  <span class="method-name">enterBugStatus</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterDataComboBox">
+                  </a> <!-- enterDataComboBox -->
+                  <span class="method-name">enterDataComboBox</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterDescription">
+                  </a> <!-- enterDescription -->
+                  <span class="method-name">enterDescription</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterIssue">
+                  </a> <!-- enterIssue -->
+                  <span class="method-name">enterIssue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRelatedDropdown">
+                  </a> <!-- enterRelatedDropdown -->
+                  <span class="method-name">enterRelatedDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginPage">
+                  </a> <!-- loginPage -->
+                  <span class="method-name">loginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="savingbugsDetails">
+                  </a> <!-- savingbugsDetails -->
+                  <span class="method-name">savingbugsDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPrioritydata">
+                  </a> <!-- selectPrioritydata -->
+                  <span class="method-name">selectPrioritydata</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">buffalocart.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputInvalidUserName">
+                  </a> <!-- inputInvalidUserName -->
+                  <span class="method-name">inputInvalidUserName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="inputValidCredentilas">
+                  </a> <!-- inputValidCredentilas -->
+                  <span class="method-name">inputValidCredentilas</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="launchLoginPage">
+                  </a> <!-- launchLoginPage -->
+                  <span class="method-name">launchLoginPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyloginPageTitle">
+                  </a> <!-- verifyloginPageTitle -->
+                  <span class="method-name">verifyloginPageTitle</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">buffalocart.TaskVerify</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickTaskPage">
+                  </a> <!-- clickTaskPage -->
+                  <span class="method-name">clickTaskPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clicknewTask">
+                  </a> <!-- clicknewTask -->
+                  <span class="method-name">clicknewTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterEstimatedHrs">
+                  </a> <!-- enterEstimatedHrs -->
+                  <span class="method-name">enterEstimatedHrs</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterHrRate">
+                  </a> <!-- enterHrRate -->
+                  <span class="method-name">enterHrRate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterRelatedto">
+                  </a> <!-- enterRelatedto -->
+                  <span class="method-name">enterRelatedto</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterTaskDueDate">
+                  </a> <!-- enterTaskDueDate -->
+                  <span class="method-name">enterTaskDueDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="enterTaskName">
+                  </a> <!-- enterTaskName -->
+                  <span class="method-name">enterTaskName</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="entertaskDate">
+                  </a> <!-- entertaskDate -->
+                  <span class="method-name">entertaskDate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveTaskDetails">
+                  </a> <!-- saveTaskDetails -->
+                  <span class="method-name">saveTaskDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\resmi\eclipse-workspace\BuffaloCartProj\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;buffalocart.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;buffalocart.ProjectPageTest&quot;/&gt;
+      &lt;class name=&quot;buffalocart.BugsVerify&quot;/&gt;
+      &lt;class name=&quot;buffalocart.TaskVerify&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(30);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'saveTaskDetails')
+data.setCell(0, 2, 'buffalocart.TaskVerify')
+data.setCell(0, 3, 20236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'performSave')
+data.setCell(1, 2, 'buffalocart.ProjectPageTest')
+data.setCell(1, 3, 17080);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'enterBugStatus')
+data.setCell(2, 2, 'buffalocart.BugsVerify')
+data.setCell(2, 3, 15018);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'inputValidCredentilas')
+data.setCell(3, 2, 'buffalocart.LoginPageTest')
+data.setCell(3, 3, 10442);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'savingbugsDetails')
+data.setCell(4, 2, 'buffalocart.BugsVerify')
+data.setCell(4, 3, 6965);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'loginPage')
+data.setCell(5, 2, 'buffalocart.BugsVerify')
+data.setCell(5, 3, 3654);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'navigateToProjectPage')
+data.setCell(6, 2, 'buffalocart.ProjectPageTest')
+data.setCell(6, 3, 3494);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'clickTaskPage')
+data.setCell(7, 2, 'buffalocart.TaskVerify')
+data.setCell(7, 3, 2286);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'inputInvalidUserName')
+data.setCell(8, 2, 'buffalocart.LoginPageTest')
+data.setCell(8, 3, 1887);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'setProgressBar')
+data.setCell(9, 2, 'buffalocart.ProjectPageTest')
+data.setCell(9, 3, 1664);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'clickbugs')
+data.setCell(10, 2, 'buffalocart.BugsVerify')
+data.setCell(10, 3, 729);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'clicknewTask')
+data.setCell(11, 2, 'buffalocart.TaskVerify')
+data.setCell(11, 3, 728);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'triggerNewProject')
+data.setCell(12, 2, 'buffalocart.ProjectPageTest')
+data.setCell(12, 3, 720);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'input_project_name_client')
+data.setCell(13, 2, 'buffalocart.ProjectPageTest')
+data.setCell(13, 3, 418);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'setProjectStatus')
+data.setCell(14, 2, 'buffalocart.ProjectPageTest')
+data.setCell(14, 3, 302);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'setStartAndEndDate')
+data.setCell(15, 2, 'buffalocart.ProjectPageTest')
+data.setCell(15, 3, 248);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'enterDescription')
+data.setCell(16, 2, 'buffalocart.BugsVerify')
+data.setCell(16, 3, 210);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'enterDataComboBox')
+data.setCell(17, 2, 'buffalocart.BugsVerify')
+data.setCell(17, 3, 167);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'selectPrioritydata')
+data.setCell(18, 2, 'buffalocart.BugsVerify')
+data.setCell(18, 3, 163);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'enterIssue')
+data.setCell(19, 2, 'buffalocart.BugsVerify')
+data.setCell(19, 3, 113);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'enterTaskDueDate')
+data.setCell(20, 2, 'buffalocart.TaskVerify')
+data.setCell(20, 3, 104);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'entertaskDate')
+data.setCell(21, 2, 'buffalocart.TaskVerify')
+data.setCell(21, 3, 101);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'enterRelatedDropdown')
+data.setCell(22, 2, 'buffalocart.BugsVerify')
+data.setCell(22, 3, 86);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'enterTaskName')
+data.setCell(23, 2, 'buffalocart.TaskVerify')
+data.setCell(23, 3, 74);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'enterRelatedto')
+data.setCell(24, 2, 'buffalocart.TaskVerify')
+data.setCell(24, 3, 68);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyProjectPrice')
+data.setCell(25, 2, 'buffalocart.ProjectPageTest')
+data.setCell(25, 3, 64);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'enterEstimatedHrs')
+data.setCell(26, 2, 'buffalocart.TaskVerify')
+data.setCell(26, 3, 51);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'enterHrRate')
+data.setCell(27, 2, 'buffalocart.TaskVerify')
+data.setCell(27, 3, 49);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'launchLoginPage')
+data.setCell(28, 2, 'buffalocart.LoginPageTest')
+data.setCell(28, 3, 21);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifyloginPageTitle')
+data.setCell(29, 2, 'buffalocart.LoginPageTest')
+data.setCell(29, 3, 8);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">buffalocart.LoginPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">inputInvalidPassword</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">buffalocart.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">launchLoginPage</span>
+                <span class="method-start">6204 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=launchLoginPage status=SUCCESS method=LoginPageTest.launchLoginPage()[pri:1, instan...)</span>
+                <span class="method-start">6231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyloginPageTitle</span>
+                <span class="method-start">6237 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyloginPageTitle status=SUCCESS method=LoginPageTest.verifyloginPageTitle()[pri...)</span>
+                <span class="method-start">6247 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">inputInvalidUserName</span>
+                <span class="method-start">6248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=inputInvalidUserName status=SUCCESS method=LoginPageTest.inputInvalidUserName()[pri...)</span>
+                <span class="method-start">8136 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">inputValidCredentilas</span>
+                <span class="method-start">8137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=inputValidCredentilas status=SUCCESS method=LoginPageTest.inputValidCredentilas()[p...)</span>
+                <span class="method-start">18580 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">buffalocart.ProjectPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">18581 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">18584 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">navigateToProjectPage</span>
+                <span class="method-start">18584 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=navigateToProjectPage status=SUCCESS method=ProjectPageTest.navigateToProjectPage()...)</span>
+                <span class="method-start">22080 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">22081 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">triggerNewProject</span>
+                <span class="method-start">22081 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=triggerNewProject status=SUCCESS method=ProjectPageTest.triggerNewProject()[pri:7, ...)</span>
+                <span class="method-start">22803 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">22804 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">input_project_name_client</span>
+                <span class="method-start">22804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=input_project_name_client status=SUCCESS method=ProjectPageTest.input_project_name_...)</span>
+                <span class="method-start">23223 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">23225 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setProgressBar</span>
+                <span class="method-start">23226 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=setProgressBar status=SUCCESS method=ProjectPageTest.setProgressBar()[pri:9, instan...)</span>
+                <span class="method-start">24892 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">24893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setStartAndEndDate</span>
+                <span class="method-start">24894 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=setStartAndEndDate status=SUCCESS method=ProjectPageTest.setStartAndEndDate()[pri:1...)</span>
+                <span class="method-start">25143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25144 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyProjectPrice</span>
+                <span class="method-start">25144 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyProjectPrice status=SUCCESS method=ProjectPageTest.verifyProjectPrice()[pri:1...)</span>
+                <span class="method-start">25209 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setProjectStatus</span>
+                <span class="method-start">25211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=setProjectStatus status=SUCCESS method=ProjectPageTest.setProjectStatus()[pri:12, i...)</span>
+                <span class="method-start">25514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">25515 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">performSave</span>
+                <span class="method-start">25515 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=performSave status=SUCCESS method=ProjectPageTest.performSave()[pri:13, instance:bu...)</span>
+                <span class="method-start">42596 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">buffalocart.BugsVerify</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">42596 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">loginPage</span>
+                <span class="method-start">42597 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickbugs</span>
+                <span class="method-start">46252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterIssue</span>
+                <span class="method-start">46982 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterRelatedDropdown</span>
+                <span class="method-start">47096 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterDataComboBox</span>
+                <span class="method-start">47183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectPrioritydata</span>
+                <span class="method-start">47351 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterDescription</span>
+                <span class="method-start">47515 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterBugStatus</span>
+                <span class="method-start">47726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">savingbugsDetails</span>
+                <span class="method-start">62745 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">buffalocart.TaskVerify</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">69711 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">clickTaskPage</span>
+                <span class="method-start">69712 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clicknewTask</span>
+                <span class="method-start">71999 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterTaskName</span>
+                <span class="method-start">72729 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterRelatedto</span>
+                <span class="method-start">72804 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">entertaskDate</span>
+                <span class="method-start">72874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterTaskDueDate</span>
+                <span class="method-start">72976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterHrRate</span>
+                <span class="method-start">73081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">enterEstimatedHrs</span>
+                <span class="method-start">73131 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">saveTaskDetails</span>
+                <span class="method-start">73183 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">93420 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
